@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media HTML</title>
+</head>
+
+<body>
+    <!--
+        To show a video in HTML, use the <video> element
+        The controls attribute adds video controls, like play, pause, and volume
+        To start a video automatically, use the autoplay attribute 
+        Add muted after autoplay to let your video start playing automatically (but muted)
+    -->
+    <video width="400" controls autoplay muted>
+        <source src="mov_bbb.mp4" type="video/mp4">
+        <source src="mov_bbb.ogg" type="video/ogg">
+        Your browser does not support HTML video.
+    </video>
+
+    <!--
+        The HTML <audio> element is used to play an audio file on a web page
+        The controls attribute adds audio controls, like play, pause, and volume
+        To start an audio file automatically, use the autoplay attribute
+        Add muted after autoplay to let your audio file start playing automatically (but muted)
+    -->
+    <audio controls autoplay muted>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- The <object> element is supported by all browsers -->
+    <object width="50%" height="50%" data="audi.jpeg"></object>
+    <!-- The <embed> element is supported in all major browsers -->
+    <embed width="50%" height="50%" src="audi.jpeg"><br>
+    <!--
+        Add mute=1 after autoplay=1 to let your video start playing automatically (but muted)
+        Add loop=1 to let your video loop forever
+        Add controls=0 to not display controls in the video player
+    -->
+    <iframe width="420" height="345"
+        src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0&autoplay=1&mute=1&loop=1">
+    </iframe>
+    <br>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3957.555546451163!2d112.7562541!3d-7.2913007!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbb476048727%3A0x5f5f7cf736ae643e!2sInstitut%20Sains%20dan%20Teknologi%20Terpadu%20Surabaya!5e0!3m2!1sid!2sid!4v1689395677003!5m2!1sid!2sid"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+</body>
+
+</html>
